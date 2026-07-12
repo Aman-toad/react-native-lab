@@ -1,3 +1,4 @@
+import ProfileCard from "@/components/ProfileCard";
 import { router } from "expo-router";
 import { Alert, Button, Pressable, Text, View } from "react-native";
 
@@ -11,15 +12,21 @@ export default function Index() {
       </View>
       <Pressable
         onPress={() => Alert.alert("Clicked")}
-        style={({ pressed }:any) => {
+        style={({ pressed }: any) => {
           `flex-1 rounded-xl justify-center items-center ${pressed ? 'bg-gray-600' : 'bg-gray-800'
             }`
         }
         }
       >
-        <Text className="text-white">Card</Text>
+        <ProfileCard />
       </Pressable>
       <Button title="Testing Navigation" onPress={() => router.push("/navigation")} />
+
+        <Button title="Home" onPress={() => router.push("/home")} />
+
+          <Button title="About" onPress={() => router.push("/about")} />
+
+            <Button title="Setting" onPress={() => router.push("/setting")} />
     </View>
   );
 }
