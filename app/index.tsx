@@ -22,11 +22,13 @@ export default function Index() {
       </Pressable>
       <Button title="Testing Navigation" onPress={() => router.push("/navigation")} />
 
-        <Button title="Home" onPress={() => router.push("/home")} />
+      <Button title="Home" onPress={() => router.push("/home")} />
 
-          <Button title="About" onPress={() => router.push("/about")} />
+      <Button title="About" onPress={() => router.push("/about")} />
 
-            <Button title="Setting" onPress={() => router.push("/setting")} />
+      <Button title="Setting" onPress={() => router.push("/settings")} />
+
+      <Button title="Login" onPress={() => router.push("/login")} />
     </View>
   );
 }
