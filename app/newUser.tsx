@@ -1,4 +1,4 @@
-import { useUser } from "./hooks/useUsers";
+import { useUser } from "@/hooks/useUsers";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Text, View, FlatList } from "react-native";
 
